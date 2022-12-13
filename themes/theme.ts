@@ -9,7 +9,7 @@ export const theme = createTheme({
     },
     secondary: {
       main: "#e8e8e8",
-      dark: "#c60055",
+      dark: "#484848",
       light: "#ff79b0",
     },
     error: {
@@ -31,6 +31,7 @@ export const theme = createTheme({
     h2: {
       fontSize: "2rem",
       fontWeight: "bold",
+      color: "#000f40",
     },
     h3: {
       fontSize: "1.75rem",

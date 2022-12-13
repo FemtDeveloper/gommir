@@ -1,15 +1,11 @@
-import React, { useContext, useState } from "react";
-import { Box } from "@mui/material";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
+import React, { useContext } from "react";
+import { List, ListItem, Drawer } from "@mui/material";
 import ListItemButton from "@mui/material/ListItemButton/ListItemButton";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
-import Drawer from "@mui/material/Drawer";
-import ListItemText from "@mui/material/ListItemText";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import Divider from "@mui/material/Divider";
+import { ListItemText, ListItemIcon } from "@mui/material";
 import { UiContext } from "../../context/ui";
+import Link from "next/link";
 
 const SideMenu = () => {
   const { isMenuOpen, toggleSideMenu } = useContext(UiContext);
@@ -25,7 +21,7 @@ const SideMenu = () => {
       PaperProps={{
         sx: {
           width: "100%",
-          backgroundColor: "rgba( 300, 328, 321, 0.7 )",
+          backgroundColor: "rgba( 340, 340, 340, 0.92 )",
           boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
           backdropFilter: "blur( 11.5px )",
           borderRadius: "5px",
@@ -48,14 +44,16 @@ const SideMenu = () => {
       <List>
         {["Inicio", "Nosotros", "Servicios", "Contactenos"].map(
           (text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
+            <Link key={text} href={`${text}`}>
+              <ListItem disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>
+                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  </ListItemIcon>
+                  <ListItemText primary={text} />
+                </ListItemButton>
+              </ListItem>
+            </Link>
           )
         )}
       </List>

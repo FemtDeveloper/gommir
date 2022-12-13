@@ -15,6 +15,22 @@ a {
 * {
   box-sizing: border-box;
 }
+.slide-image,
+.other-images {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+}
+.other-images img {
+  border-radius: 5px;
+}
+@media (min-width: 600px) {
+  .slide-image,
+  .other-images {
+    height: 390px;
+  }
+}
 
 @media (prefers-color-scheme: dark) {
   html {

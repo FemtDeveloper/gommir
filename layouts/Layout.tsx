@@ -13,7 +13,7 @@ const Layout: FC<Props> = ({ children, title, pageDescription }) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>Gommir - {title}</title>
         <meta name="description" content={pageDescription} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -21,7 +21,7 @@ const Layout: FC<Props> = ({ children, title, pageDescription }) => {
       <SideMenu />
       <main
         style={{
-          paddingTop: 200,
+          paddingTop: 70,
           margin: 0,
           height: "100vh",
         }}
