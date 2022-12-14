@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React, { FC } from "react";
+import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import SideMenu from "../Components/SideMenu/SideMenu";
 
@@ -13,7 +14,7 @@ const Layout: FC<Props> = ({ children, title, pageDescription }) => {
   return (
     <>
       <Head>
-        <title>Gommir - {title}</title>
+        <title>{`Gommir - ${title}`}</title>
         <meta name="description" content={pageDescription} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -23,11 +24,11 @@ const Layout: FC<Props> = ({ children, title, pageDescription }) => {
         style={{
           paddingTop: 70,
           margin: 0,
-          height: "100vh",
         }}
       >
         {children}
       </main>
+      <Footer />
     </>
   );
 };

@@ -113,7 +113,7 @@ const Nosotros: NextPage = () => {
                 </Typography>
               </Box>
             </Grid2>
-            <Grid2 xs={12} sm={6} mb={4}>
+            <Grid2 xs={12} sm={6}>
               <div className="other-images">
                 <Image src={"/team.jpg"} fill alt="team" />
               </div>
