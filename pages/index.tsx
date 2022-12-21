@@ -4,6 +4,8 @@ import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import Image from "next/image";
 import Slider from "../Components/Slide";
 import Layout from "../layouts";
+import ContactForm from "../Components/contact/ContactForm";
+import MyMap from "../Components/Maps/Maps";
 
 export default function Home() {
   return (
@@ -155,6 +157,20 @@ export default function Home() {
             </Grid2>
           </Grid2>
         </Grid2>
+      </Grid2>
+      <Grid2
+        display={"flex"}
+        sx={{ backgroundColor: "#000823", justifyContent: "center" }}
+      >
+        <ContactForm />
+      </Grid2>
+      <Grid2
+        display={"flex"}
+        sx={{ backgroundColor: "#000823", justifyContent: "center" }}
+        height={600}
+        padding={10}
+      >
+        <MyMap />
       </Grid2>
     </Layout>
   );

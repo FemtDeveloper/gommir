@@ -15,7 +15,7 @@ const Navbar = () => {
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        paddingX: 2,
+        paddingX: 1,
         paddingY: 1,
         height: "70px",
         margin: 0,

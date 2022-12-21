@@ -1,3 +1,7 @@
+:root {
+  --form-font-color: #1f1f1f;
+}
+
 html,
 body {
   padding: 0;
@@ -50,4 +54,100 @@ a {
 .main-logo {
   width: 30%;
   height: 120px;
+}
+
+.contact-container {
+  background-color: #1c335217;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border: blue;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 10px;
+  margin-bottom: 50px;
+  box-shadow: 0 -5px 15px #10101064;
+}
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  font-weight: 600;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+.contact-container h1 {
+  color: #ffffff;
+  opacity: 87%;
+}
+.contact-container label {
+  color: #e8e8e8;
+  margin: 5px;
+  font-size: 16px;
+}
+.contact-container input,
+.contact-container textarea {
+  background-color: white;
+  color: var(--form-font-color);
+  width: 100%;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+.contact-container input {
+  height: 30px;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  background-color: #001448db;
+  color: #e6e6e6;
+}
+
+.contact-container .btn {
+  color: #eaeaea;
+  font-weight: 600;
+  font-size: 16px;
+  height: 40px;
+  width: 50%;
+  margin-top: 15px;
+  border: none;
+  background: linear-gradient(90deg, #353535 0%, #17004d 100%);
+}
+.emailSended {
+  background-color: #08640e;
+  position: relative;
+  width: 45%;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 15px;
+  color: var(--form-font-color);
+}
+.emailSended p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.map-container {
+  width: 100%;
+  border-radius: 5px;
+}
+@media screen and (min-width: 540px) {
+  .contact-container {
+    width: 65%;
+    padding: 30px;
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .contact-container {
+    width: 50%;
+    padding: 30px;
+    padding-top: 10px;
+  }
 }

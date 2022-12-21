@@ -2,7 +2,7 @@ import { Slide } from "react-slideshow-image";
 import Image from "next/image";
 import "react-slideshow-image/dist/styles.css";
 
-const slideImages = ["sunset.jpg", "wall.jpg", "ground.jpg"];
+const slideImages: string[] = ["sunset.jpg", "wall.jpg", "ground.jpg"];
 
 const Slider = () => {
   return (
