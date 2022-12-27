@@ -1,4 +1,3 @@
-import { Button, Paper } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import Image from "next/image";
@@ -160,17 +159,20 @@ export default function Home() {
       </Grid2>
       <Grid2
         display={"flex"}
-        sx={{ backgroundColor: "#000823", justifyContent: "center" }}
-      >
-        <ContactForm />
-      </Grid2>
-      <Grid2
-        display={"flex"}
-        sx={{ backgroundColor: "#000823", justifyContent: "center" }}
+        sx={{
+          backgroundColor: "#000823",
+          justifyContent: "center",
+          padding: { xs: 4, sm: 8 },
+        }}
         height={600}
-        padding={10}
       >
         <MyMap />
+      </Grid2>{" "}
+      <Grid2
+        display={"flex"}
+        sx={{ backgroundColor: "#f1f1f1", justifyContent: "center" }}
+      >
+        <ContactForm />
       </Grid2>
     </Layout>
   );

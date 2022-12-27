@@ -15,9 +15,6 @@ export default function MyMap() {
   const [map, setMap] = React.useState(null);
 
   const onLoad = React.useCallback(function callback(map: any) {
-    // This is just an example of getting and using the map instance!!! don't just blindly copy!
-    const bounds = new window.google.maps.LatLngBounds(center);
-    // map.fitBounds(bounds);
     map.setZoom(17);
 
     setMap(map);
@@ -31,7 +28,6 @@ export default function MyMap() {
     <GoogleMap
       mapContainerClassName="map-container"
       center={center}
-      //   zoom={15}
       onLoad={onLoad}
       onUnmount={onUnmount}
     >

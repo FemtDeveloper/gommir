@@ -2,8 +2,6 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
-  // const form = useRef();
-
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {

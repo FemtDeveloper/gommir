@@ -57,7 +57,7 @@ a {
 }
 
 .contact-container {
-  background-color: #1c335217;
+  background-color: #000823;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,7 +68,7 @@ a {
   padding: 20px;
   margin: 20px 10px;
   margin-bottom: 50px;
-  box-shadow: 0 -5px 15px #10101064;
+  box-shadow: 0 -5px 15px #1010105f;
 }
 .contact-container form {
   display: flex;
