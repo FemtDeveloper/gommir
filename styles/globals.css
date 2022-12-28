@@ -36,9 +36,11 @@ a {
   }
 }
 @media (min-width: 980px) {
-  .slide-image,
-  .other-images {
+  .slide-image {
     height: 540px;
+  }
+  .other-images {
+    height: 340px;
   }
 }
 
