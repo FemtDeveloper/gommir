@@ -1,11 +1,7 @@
 import React, { useContext } from "react";
-import { List, ListItem, Drawer } from "@mui/material";
-import ListItemButton from "@mui/material/ListItemButton/ListItemButton";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
-import { ListItemText, ListItemIcon } from "@mui/material";
+import { Drawer } from "@mui/material";
 import { UiContext } from "../../context/ui";
-import Link from "next/link";
+import LinkList from "../LinkList";
 
 const SideMenu = () => {
   const { isMenuOpen, toggleSideMenu } = useContext(UiContext);
@@ -41,22 +37,7 @@ const SideMenu = () => {
       >
         X
       </span>
-      <List>
-        {["Inicio", "Nosotros", "Servicios", "Contactenos"].map(
-          (text, index) => (
-            <Link key={text} href={`${text}`}>
-              <ListItem disablePadding>
-                <ListItemButton>
-                  <ListItemIcon>
-                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                  </ListItemIcon>
-                  <ListItemText primary={text} />
-                </ListItemButton>
-              </ListItem>
-            </Link>
-          )
-        )}
-      </List>
+      <LinkList openMenu={toggleSideMenu} />
     </Drawer>
   );
 };

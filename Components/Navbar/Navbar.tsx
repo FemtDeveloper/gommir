@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
-import { AppBar, Button } from "@mui/material";
+import { AppBar, Button, Box } from "@mui/material";
 import Image from "next/image";
 import MenuIcon from "@mui/icons-material/Menu";
 import { UiContext } from "../../context/ui";
 import Link from "next/link";
+import LinkList from "../LinkList";
 
 const Navbar = () => {
   const { toggleSideMenu } = useContext(UiContext);
@@ -36,7 +37,14 @@ const Navbar = () => {
           />
         </Link>
       </div>
-      <Button color="secondary" onClick={toggleSideMenu}>
+      <Box display={{ xs: "none", sm: "flex" }}>
+        <LinkList />
+      </Box>
+      <Button
+        color="secondary"
+        onClick={toggleSideMenu}
+        sx={{ padding: 0, display: { sm: "none" } }}
+      >
         <MenuIcon fontSize="large" />
       </Button>
     </AppBar>

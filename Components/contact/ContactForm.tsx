@@ -28,18 +28,18 @@ const ContactForm = () => {
   return (
     <>
       <div className="contact-container container" id="contact">
-        <h1>Contact me</h1>
+        <h1>Contáctame</h1>
         <form onSubmit={sendEmail} ref={form}>
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name">Nombre</label>
           <input type="text" id="name" name="name" className="form-control" />
-          <label htmlFor="user-email">Email</label>
+          <label htmlFor="user-email">Correo Electrónico</label>
           <input
             type="email"
             id="email"
             name="user-email"
             className="form-control"
           />
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message">Mensaje</label>
           <textarea
             name="message"
             id="message"
