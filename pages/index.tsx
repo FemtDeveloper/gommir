@@ -112,7 +112,7 @@ export default function Home() {
       <Grid2
         display={"flex"}
         sx={{
-          backgroundColor: "#000823",
+          backgroundColor: "#f1f1f1",
           justifyContent: "center",
           padding: { xs: 4, sm: 8 },
         }}

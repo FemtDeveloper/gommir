@@ -22,13 +22,10 @@ const Navbar = () => {
         margin: 0,
       }}
     >
-      <div
-        className="main-logo"
-        style={{ width: "320px", position: "relative", marginTop: "10px" }}
-      >
+      <div className="logo-header" style={{ position: "relative" }}>
         <Link href={"/"}>
           <Image
-            src="/main-logo.png"
+            src="/logo.png"
             alt="navbar-logo"
             fill
             sizes="(max-width: 768px) 100vw,
@@ -41,7 +38,7 @@ const Navbar = () => {
         <LinkList />
       </Box>
       <Button
-        color="secondary"
+        color={"secondary"}
         onClick={toggleSideMenu}
         sx={{ padding: 0, display: { sm: "none" } }}
       >
