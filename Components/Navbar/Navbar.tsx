@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { AppBar, Button, Box } from "@mui/material";
+import { AppBar, Button, Box, Typography } from "@mui/material";
 import Image from "next/image";
 import MenuIcon from "@mui/icons-material/Menu";
 import { UiContext } from "../../context/ui";
@@ -22,18 +22,31 @@ const Navbar = () => {
         margin: 0,
       }}
     >
-      <div className="logo-header" style={{ position: "relative" }}>
-        <Link href={"/"}>
-          <Image
-            src="/logo.png"
-            alt="navbar-logo"
-            fill
-            sizes="(max-width: 768px) 100vw,
+      <Link href={"/"}>
+        <Box display={"flex"} alignItems="center" gap={1}>
+          <div
+            className="logo-header"
+            style={{ position: "relative", display: "flex", zIndex: 10 }}
+          >
+            <Image
+              src="/logo.png"
+              alt="navbar-logo"
+              fill
+              sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
-          />
-        </Link>
-      </div>
+            />
+          </div>
+          <Typography
+            variant="h2"
+            component={"span"}
+            color="#001660"
+            fontWeight={500}
+          >
+            GOMMIR
+          </Typography>
+        </Box>
+      </Link>
       <Box display={{ xs: "none", sm: "flex" }}>
         <LinkList />
       </Box>

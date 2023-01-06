@@ -35,7 +35,7 @@ const NuevosProyectos = () => {
         </Typography>
         <Link href={"/nuevos-proyectos"}>
           <CharacteriscticsCard
-            cardTitle="Reserva de puntacanoa"
+            cardTitle="Reserva de Punta Canoa"
             cardText="Nuevo proyecto proximo a comenzar en la ciudad de Cartagena de Indias"
             cardMedia="/cartagena-via.jpg"
           />

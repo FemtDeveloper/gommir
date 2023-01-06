@@ -39,8 +39,8 @@ const Footer = () => {
           >
             <Link href={"/"}>
               <Image
-                src="/logo.png"
-                alt="navbar-logo"
+                src="/main-logo.png"
+                alt="footer-logo"
                 fill
                 sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,

@@ -55,7 +55,7 @@ a {
 }
 .main-logo {
   width: 30%;
-  height: 120px;
+  height: 220px;
 }
 .logo-header {
   height: 60px;
@@ -151,6 +151,9 @@ a {
     width: 65%;
     padding: 30px;
     padding-top: 10px;
+  }
+  .other-images {
+    height: 250px;
   }
 }
 @media screen and (min-width: 900px) {
