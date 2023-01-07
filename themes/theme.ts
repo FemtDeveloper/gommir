@@ -41,6 +41,7 @@ export const theme = createTheme({
     h3: {
       fontSize: "1.75rem",
       fontWeight: "bold",
+      color: "#000f40",
     },
     h4: {
       fontSize: "1.5rem",
@@ -53,6 +54,12 @@ export const theme = createTheme({
     h6: {
       fontSize: "1rem",
       fontWeight: "bold",
+    },
+    subtitle1: {
+      color: "#000f40",
+    },
+    subtitle2: {
+      color: "#000f40",
     },
   },
   spacing: 8,

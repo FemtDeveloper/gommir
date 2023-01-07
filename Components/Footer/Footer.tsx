@@ -39,7 +39,7 @@ const Footer = () => {
           >
             <Link href={"/"}>
               <Image
-                src="/main-logo.png"
+                src="/footer-logo.png"
                 alt="footer-logo"
                 fill
                 sizes="(max-width: 768px) 100vw,
@@ -66,7 +66,7 @@ const Footer = () => {
               alignItems={"center"}
               gap={3}
             >
-              <LocationOnIcon />
+              <LocationOnIcon color="secondary" />
               <Box>
                 <Typography variant="subtitle2">
                   Bogotá D.C, Colombia
@@ -83,7 +83,7 @@ const Footer = () => {
               alignItems={"center"}
               gap={3}
             >
-              <EmailIcon />
+              <EmailIcon color="secondary" />
               <Typography variant="subtitle2">contacto@gommir.com</Typography>
             </Box>
           </Grid2>
@@ -95,7 +95,7 @@ const Footer = () => {
               alignItems={"center"}
               gap={3}
             >
-              <PhoneIcon />
+              <PhoneIcon color="secondary" />
               <Typography variant="subtitle2">(+57) 318-XXX-XXXX</Typography>
             </Box>
           </Grid2>

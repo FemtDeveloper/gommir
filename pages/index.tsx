@@ -9,6 +9,9 @@ import CharacteriscticsCard from "../Components/Characteristic/CharacteristicsCa
 import NuevosProyectos from "../Components/NuevosProyectos";
 
 export default function Home() {
+  const date = new Date().getTime();
+  console.log({ date }, typeof date);
+
   return (
     <Layout title="Inicio" pageDescription="This is the home of our page">
       <Slider />
@@ -30,7 +33,7 @@ export default function Home() {
           }}
           justifyContent="center"
           alignItems="center"
-          marginY={15}
+          marginY={{ xs: 3, sm: 10 }}
         >
           <Grid2
             xs={12}
