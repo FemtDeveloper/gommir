@@ -53,7 +53,7 @@ const Nosotros: NextPage = () => {
             </Grid2>
             <Grid2 xs={12} sm={6} mb={4}>
               <div className="other-images">
-                <Image src={"/team.jpg"} fill alt="team" />
+                <Image src={"/somos.jpg"} fill alt="team" />
               </div>
             </Grid2>
           </Grid2>
@@ -66,7 +66,7 @@ const Nosotros: NextPage = () => {
             {" "}
             <Grid2 xs={12} sm={6} mb={4}>
               <div className="other-images">
-                <Image src={"/team.jpg"} fill alt="team" />
+                <Image src={"/mission.jpg"} fill alt="mission" />
               </div>
             </Grid2>
             <Grid2 justifyContent={"center"} xs={12} sm={5} alignItems="center">
@@ -88,12 +88,7 @@ const Nosotros: NextPage = () => {
               </Box>
             </Grid2>
           </Grid2>
-          <Grid2
-            container
-            gap={3}
-            // sx={{ flexDirection: { xs: "column-reverse", sm: "row" } }}
-            alignItems="center"
-          >
+          <Grid2 container gap={3} alignItems="center">
             <Grid2 justifyContent={"center"} xs={12} sm={5} alignItems="center">
               <Box
                 gap={3}
@@ -115,7 +110,7 @@ const Nosotros: NextPage = () => {
             </Grid2>
             <Grid2 xs={12} sm={6}>
               <div className="other-images">
-                <Image src={"/team.jpg"} fill alt="team" />
+                <Image src={"/goals.jpg"} fill alt="goals" />
               </div>
             </Grid2>
           </Grid2>

@@ -48,7 +48,7 @@ const Servicios: NextPage = () => {
             </Grid2>
             <Grid2 xs={12} sm={6} mb={4}>
               <div className="other-images">
-                <Image src={"/team.jpg"} fill alt="team" />
+                <Image src={"/saneamiento.jpg"} fill alt="team" />
               </div>
             </Grid2>
           </Grid2>
@@ -61,7 +61,7 @@ const Servicios: NextPage = () => {
             {" "}
             <Grid2 xs={12} sm={6} mb={4}>
               <div className="other-images">
-                <Image src={"/team.jpg"} fill alt="team" />
+                <Image src={"/adecuacion.jpg"} fill alt="team" />
               </div>
             </Grid2>
             <Grid2 justifyContent={"center"} xs={12} sm={5} alignItems="center">
@@ -110,7 +110,7 @@ const Servicios: NextPage = () => {
             </Grid2>
             <Grid2 xs={12} sm={6}>
               <div className="other-images">
-                <Image src={"/team.jpg"} fill alt="team" />
+                <Image src={"/ejecucion.jpg"} fill alt="team" />
               </div>
             </Grid2>
           </Grid2>

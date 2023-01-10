@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { AppBar, Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
@@ -14,6 +14,7 @@ const Footer = () => {
       flexDirection={{ xs: "column", sm: "row" }}
       justifyContent="center"
       alignItems={"center"}
+      pb={5}
       component={"footer"}
       sx={{ backgroundColor: "#f1f1f1" }}
     >
