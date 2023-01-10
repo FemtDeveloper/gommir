@@ -1,23 +1,28 @@
 import * as React from "react";
 
-import { Card, CardMedia, CardContent, Box } from "@mui/material";
+import { Card, CardMedia, CardContent, Box, Button } from "@mui/material";
 // import Card from "@mui/material/Card";
 // import CardMedia from "@mui/material/CardMedia";
 // import CardContent from "@mui/material/CardContent";
 
 import Typography from "@mui/material/Typography";
+import Link from "next/link";
 
 interface CardProps {
   cardTitle: string;
   cardMedia: string;
   cardText: string;
   imageCredits?: string;
+  cardStyles?: Object;
+  cardLink?: string;
 }
 
 const CharacteriscticsCard = ({
   cardMedia,
   cardText,
   cardTitle,
+  cardStyles,
+  cardLink,
 }: CardProps) => {
   return (
     <Box>
@@ -39,12 +44,22 @@ const CharacteriscticsCard = ({
         {cardTitle}
       </Typography>
       <Card
-        sx={{
-          maxWidth: 345,
-          minHeight: 490,
-          justifyContent: "center",
-          position: "relative",
-        }}
+        sx={
+          !cardStyles
+            ? {
+                maxWidth: 345,
+                minHeight: 490,
+                position: "relative",
+              }
+            : {
+                ...cardStyles,
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "flex-end",
+                position: "relative",
+                maxWidth: 345,
+              }
+        }
       >
         <CardMedia
           component="img"
@@ -57,6 +72,13 @@ const CharacteriscticsCard = ({
             {cardText}
           </Typography>
         </CardContent>
+        {cardLink && (
+          <Link href={`/${cardLink}`} style={{ textAlign: "end" }}>
+            <Button color="secondary" sx={{ mr: 0 }}>
+              Ver más...
+            </Button>
+          </Link>
+        )}
       </Card>
     </Box>
   );

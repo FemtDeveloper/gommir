@@ -9,15 +9,16 @@ import CharacteriscticsCard from "../Components/Characteristic/CharacteristicsCa
 import NuevosProyectos from "../Components/NuevosProyectos";
 
 export default function Home() {
-  const date = new Date().getTime();
-  console.log({ date }, typeof date);
-
+  const styles = {
+    height: "340px",
+  };
   return (
     <Layout title="Inicio" pageDescription="This is the home of our page">
       <Slider />
       <Grid2
         container
-        m={5}
+        marginY={2}
+        marginX={5}
         gap={1}
         display={"flex"}
         justifyContent={"center"}
@@ -33,7 +34,7 @@ export default function Home() {
           }}
           justifyContent="center"
           alignItems="center"
-          marginY={{ xs: 3, sm: 10 }}
+          marginY={{ xs: 1, sm: 10 }}
         >
           <Grid2
             xs={12}
@@ -75,6 +76,8 @@ export default function Home() {
             cardTitle="Nuestras cualidades"
             cardText="Conoce nuestras cualidades"
             cardMedia="/characteristics.jpg"
+            cardStyles={styles}
+            cardLink={"cualidades"}
           />
         </Box>
         <Box

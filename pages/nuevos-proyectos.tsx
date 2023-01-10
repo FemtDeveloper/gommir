@@ -2,7 +2,6 @@ import React from "react";
 import { NextPage } from "next";
 import { Typography, Box } from "@mui/material";
 import Layout from "../layouts/Layout";
-// import Box from "@mui/material/Box";
 
 const Nuevosproyectos: NextPage = () => {
   return (

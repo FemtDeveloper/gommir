@@ -2,9 +2,11 @@ import React from "react";
 import { Typography } from "@mui/material";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import CharacteriscticsCard from "../Characteristic/CharacteristicsCard";
-import Link from "next/link";
 
 const NuevosProyectos = () => {
+  const styles = {
+    height: "340px",
+  };
   return (
     <Grid2
       xs={12}
@@ -33,13 +35,13 @@ const NuevosProyectos = () => {
         <Typography variant="h1" component={"h1"}>
           Nuevos Proyectos
         </Typography>
-        <Link href={"/nuevos-proyectos"}>
-          <CharacteriscticsCard
-            cardTitle="Reserva de Punta Canoa"
-            cardText="Nuevo proyecto proximo a comenzar en la ciudad de Cartagena de Indias"
-            cardMedia="/cartagena-via.jpg"
-          />
-        </Link>
+        <CharacteriscticsCard
+          cardTitle="Reserva de Punta Canoa"
+          cardText="Nuevo proyecto proximo a comenzar en la ciudad de Cartagena de Indias"
+          cardMedia="/cartagena-via.jpg"
+          cardStyles={styles}
+          cardLink={"nuevos-proyectos"}
+        />
       </Grid2>
     </Grid2>
   );

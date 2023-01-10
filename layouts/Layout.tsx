@@ -16,7 +16,7 @@ const Layout: FC<Props> = ({ children, title, pageDescription }) => {
       <Head>
         <title>{`Gommir - ${title}`}</title>
         <meta name="description" content={pageDescription} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
       <Navbar />
       <SideMenu />
