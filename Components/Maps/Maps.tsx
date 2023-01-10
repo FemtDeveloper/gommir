@@ -1,4 +1,5 @@
 import React from "react";
+import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 
 const center = {
@@ -25,15 +26,25 @@ export default function MyMap() {
   }, []);
 
   return isLoaded ? (
-    <GoogleMap
-      mapContainerClassName="map-container"
-      center={center}
-      onLoad={onLoad}
-      onUnmount={onUnmount}
+    <Grid2
+      display={"flex"}
+      sx={{
+        backgroundColor: "#f1f1f1",
+        justifyContent: "center",
+        padding: { xs: 4, sm: 8 },
+      }}
+      height={600}
     >
-      <Marker position={center} />
-      <></>
-    </GoogleMap>
+      <GoogleMap
+        mapContainerClassName="map-container"
+        center={center}
+        onLoad={onLoad}
+        onUnmount={onUnmount}
+      >
+        <Marker position={center} />
+        <></>
+      </GoogleMap>
+    </Grid2>
   ) : (
     <></>
   );

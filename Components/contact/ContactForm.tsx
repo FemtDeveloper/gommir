@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 
 const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -26,7 +27,7 @@ const ContactForm = () => {
     }
   };
   return (
-    <>
+    <Grid2 display={"flex"} sx={{ justifyContent: "center" }}>
       <div className="contact-container container" id="contact">
         <h1>Contáctanos</h1>
         <form onSubmit={sendEmail} ref={form}>
@@ -55,7 +56,7 @@ const ContactForm = () => {
           </div>
         )} */}
       </div>
-    </>
+    </Grid2>
   );
 };
 
