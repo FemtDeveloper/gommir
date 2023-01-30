@@ -50,12 +50,12 @@ a {
     height: 460px;
   }
   .gommir-image {
-    height: 340px;
+    height: 420px;
   }
 }
 @media (min-width: 980px) {
   .slide-image {
-    height: 540px;
+    height: 620px;
   }
   .other-images {
     height: 340px;

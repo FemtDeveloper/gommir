@@ -32,13 +32,20 @@ const ContactForm = () => {
         <h1>Contáctanos</h1>
         <form onSubmit={sendEmail} ref={form}>
           <label htmlFor="name">Nombre</label>
-          <input type="text" id="name" name="name" className="form-control" />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            className="form-control"
+            required
+          />
           <label htmlFor="user-email">Correo Electrónico</label>
           <input
             type="email"
             id="email"
             name="user-email"
             className="form-control"
+            required
           />
           <label htmlFor="message">Mensaje</label>
           <textarea
@@ -46,6 +53,7 @@ const ContactForm = () => {
             id="message"
             rows={4}
             className="form-control"
+            required
           />
 
           <input type="submit" value="Send" className="btn" />

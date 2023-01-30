@@ -7,18 +7,9 @@ const slideImages: string[] = ["sunset.jpg", "wall.jpg", "ground.jpg"];
 const Slider = () => {
   return (
     <div>
-      <Slide autoplay duration={2500}>
+      <Slide autoplay duration={3000}>
         {slideImages.map((slide) => (
-          <div
-            className="each-slide-effect slide-image"
-            // style={{
-            //   position: "relative",
-            //   width: "100%",
-            //   height: "400px",
-            //   margin: "0 auto",
-            // }}
-            key={slide}
-          >
+          <div className="each-slide-effect slide-image" key={slide}>
             <Image src={`/${slide}`} alt="Image 1" fill />
           </div>
         ))}

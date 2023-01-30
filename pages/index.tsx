@@ -19,12 +19,13 @@ export default function Home() {
     >
       <Slider />
       <Grid2
+        container
         xs={12}
         gap={3}
         display={"flex"}
         flexDirection={{
           xs: "column",
-          // sm: "row",
+          sm: "row",
         }}
         justifyContent="center"
         alignItems="center"
@@ -32,8 +33,9 @@ export default function Home() {
       >
         <Grid2
           xs={12}
-          sm={10}
+          sm={8}
           mb={2}
+          padding={{ xs: 2, sm: 0 }}
           display="flex"
           width={"100%"}
           gap={2}
@@ -55,9 +57,9 @@ export default function Home() {
             proyecto.
           </Typography>
         </Grid2>
-        <Box className="gommir-image">
+        <Grid2 className="gommir-image" xs={12} sm={6}>
           <Image src={"/team.jpg"} fill alt="team" />
-        </Box>
+        </Grid2>
       </Grid2>
 
       <NuevosProyectos />

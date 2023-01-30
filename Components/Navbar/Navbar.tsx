@@ -55,7 +55,7 @@ const Navbar = () => {
         onClick={toggleSideMenu}
         sx={{ padding: 0, display: { sm: "none" } }}
       >
-        <MenuIcon fontSize="large" color="secondary" />
+        <MenuIcon fontSize="large" sx={{ color: "#001e85" }} />
       </Button>
     </AppBar>
   );

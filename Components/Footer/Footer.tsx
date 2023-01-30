@@ -53,7 +53,7 @@ const Footer = () => {
             <LocationOnIcon color="secondary" />
             <Box>
               <Typography variant="subtitle2">Bogotá D.C, Colombia</Typography>
-              <Typography variant="subtitle2">Calle 94 # 13 - 00</Typography>
+              {/* <Typography variant="subtitle2">Calle 94 # 13 - 00</Typography> */}
             </Box>
           </Box>
         </Grid2>
@@ -70,7 +70,7 @@ const Footer = () => {
           </Box>
         </Grid2>
         <Grid2 xs={12} sm={6}>
-          <Box
+          {/* <Box
             display="flex"
             flexDirection={"row"}
             justifyContent="center"
@@ -79,7 +79,7 @@ const Footer = () => {
           >
             <PhoneIcon color="secondary" />
             <Typography variant="subtitle2">(+57) 318-XXX-XXXX</Typography>
-          </Box>
+          </Box> */}
         </Grid2>
       </Grid2>
     </Box>
