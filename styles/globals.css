@@ -81,8 +81,8 @@ a {
 }
 
 .contact-container {
-  /* background-color: #000823; */
   background-color: #eeeeee;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,7 +129,7 @@ a {
 
 .contact-container input:focus,
 .contact-container textarea:focus {
-  background-color: #979797db;
+  background-color: #000a36db;
   color: #e6e6e6;
 }
 
@@ -161,6 +161,15 @@ a {
 .map-container {
   width: 100%;
   border-radius: 5px;
+}
+.enviado {
+  position: absolute;
+  background: linear-gradient(90deg, #5cb790 0%, #100230 100%);
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 10px;
+  bottom: 30px;
 }
 @media screen and (min-width: 540px) {
   .contact-container {

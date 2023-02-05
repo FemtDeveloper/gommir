@@ -1,9 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
+import CheckIcon from "@mui/icons-material/Check";
 
 const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
+  const [messageSended, setMessageSended] = useState(false);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -11,7 +13,7 @@ const ContactForm = () => {
     if (form.current) {
       emailjs
         .sendForm(
-          "service_ai6ql26",
+          "service_o0bjz0u",
           "template_jkt2k9c",
           form.current,
           "user_8XX2XoAZbUrHIgxqEUopG"
@@ -25,9 +27,14 @@ const ContactForm = () => {
           }
         );
     }
+    form.current?.reset();
+    setMessageSended(true);
+    setTimeout(() => {
+      setMessageSended(false);
+    }, 2000);
   };
   return (
-    <Grid2 display={"flex"} sx={{ justifyContent: "center" }}>
+    <Grid2 display={"flex"} sx={{ justifyContent: "center" }} width={"100%"}>
       <div className="contact-container container" id="contact">
         <h1>Contáctanos</h1>
         <form onSubmit={sendEmail} ref={form}>
@@ -56,13 +63,13 @@ const ContactForm = () => {
             required
           />
 
-          <input type="submit" value="Send" className="btn" />
+          <input
+            type="submit"
+            value={messageSended ? "¡ Mensaje Enviado !" : "Enviar"}
+            disabled={messageSended ? true : false}
+            className="btn"
+          />
         </form>
-        {/* {isActive && (
-          <div className="emailSended">
-            <p>Message sent</p>
-          </div>
-        )} */}
       </div>
     </Grid2>
   );
