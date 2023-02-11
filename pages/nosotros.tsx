@@ -26,30 +26,33 @@ const Nosotros: NextPage = () => {
         <div className="slide-image">
           <Image src={"/nostros-top.jpg"} alt={"People working"} fill />
         </div>
-        <Grid2 container m={4} gap={3}>
-          <Grid2 container gap={3}>
-            <Grid2 justifyContent={"center"} xs={12} sm={5} alignItems="center">
-              <Box
-                gap={3}
-                display="flex"
-                flexDirection={"column"}
-                alignItems="center"
-                justifyContent="center"
+        <Grid2 container m={4} gap={3} justifyContent={"center"}>
+          <Grid2 container gap={3} justifyContent={"center"} display={"flex"}>
+            <Grid2
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems="center"
+              flexDirection={"column"}
+              xs={12}
+              sm={5}
+            >
+              <Typography
+                variant="h2"
+                component={"h2"}
+                textAlign={"center"}
+                mb={6}
               >
-                <Typography variant="h2" component={"h2"}>
-                  Quienes Somos
-                </Typography>
-                <Typography variant="body2" component={"p"}>
-                  GOMMIR es una empresa con una gran responsabilidad social y
-                  ambiental dedicada a la construcción, urbanización, y
-                  promoción de servicios para el sector inmobiliario, cuyo
-                  espíritu empresarial está orientado al servicio y a la
-                  competitividad, fomentando y propendiendo por el
-                  fortalecimiento en sus diferentes manifestaciones, apoyando la
-                  ejecución de los planes y programas de desarrollo económico y
-                  social.
-                </Typography>
-              </Box>
+                Quienes Somos
+              </Typography>
+              <Typography variant="body2" component={"p"}>
+                GOMMIR es una empresa con una gran responsabilidad social y
+                ambiental dedicada a la construcción, urbanización, y promoción
+                de servicios para el sector inmobiliario, cuyo espíritu
+                empresarial está orientado al servicio y a la competitividad,
+                fomentando y propendiendo por el fortalecimiento en sus
+                diferentes manifestaciones, apoyando la ejecución de los planes
+                y programas de desarrollo económico y social.
+              </Typography>
             </Grid2>
             <Grid2 xs={12} sm={6} mb={4}>
               <div className="other-images">
@@ -62,51 +65,51 @@ const Nosotros: NextPage = () => {
             gap={3}
             sx={{ flexDirection: { xs: "column-reverse", sm: "row" } }}
             alignItems="center"
+            justifyContent={"center"}
           >
-            {" "}
             <Grid2 xs={12} sm={6} mb={4}>
               <div className="other-images">
                 <Image src={"/mission.jpg"} fill alt="mission" />
               </div>
             </Grid2>
             <Grid2 justifyContent={"center"} xs={12} sm={5} alignItems="center">
-              <Box
-                gap={3}
-                display="flex"
-                flexDirection={"column"}
-                alignItems="center"
-                justifyContent="center"
+              <Typography
+                variant="h2"
+                component={"h2"}
+                textAlign={"center"}
+                mb={6}
               >
-                <Typography variant="h2" component={"h2"}>
-                  Nuestra Misión
-                </Typography>
-                <Typography variant="body2" component={"p"}>
-                  Crear valor para nuestros accionistas y colaboradores,
-                  aportando bienestar a la sociedad, con pleno respeto hacia el
-                  medio ambiente, para cumplir el triple propósito sostenible.
-                </Typography>
-              </Box>
+                Nuestra Misión
+              </Typography>
+              <Typography variant="body2" component={"p"}>
+                Crear valor para nuestros accionistas y colaboradores, aportando
+                bienestar a la sociedad, con pleno respeto hacia el medio
+                ambiente, para cumplir el triple propósito sostenible.
+              </Typography>
             </Grid2>
           </Grid2>
-          <Grid2 container gap={3} alignItems="center">
+          <Grid2
+            container
+            gap={3}
+            alignItems="center"
+            justifyContent={"center"}
+          >
             <Grid2 justifyContent={"center"} xs={12} sm={5} alignItems="center">
-              <Box
-                gap={3}
-                display="flex"
-                flexDirection={"column"}
-                alignItems="center"
-                justifyContent="center"
+              <Typography
+                variant="h2"
+                component={"h2"}
+                color="secundary"
+                mb={6}
+                textAlign={"center"}
               >
-                <Typography variant="h2" component={"h2"} color="secundary">
-                  Nuestra Visión
-                </Typography>
-                <Typography variant="body2" component={"p"}>
-                  Ser en 2.025 una empresa destacada en el sector inmobiliario
-                  por ofrecer servicios innovadores, caracterizada por la
-                  excelencia y la honestidad en sus procesos, como medios para
-                  ganar la confianza y el compromiso de sus asociados.
-                </Typography>
-              </Box>
+                Nuestra Visión
+              </Typography>
+              <Typography variant="body2" component={"p"}>
+                Ser en 2.025 una empresa destacada en el sector inmobiliario por
+                ofrecer servicios innovadores, caracterizada por la excelencia y
+                la honestidad en sus procesos, como medios para ganar la
+                confianza y el compromiso de sus asociados.
+              </Typography>
             </Grid2>
             <Grid2 xs={12} sm={6}>
               <div className="other-images">
