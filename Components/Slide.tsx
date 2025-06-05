@@ -37,8 +37,8 @@ const Slider = () => {
 
       <Slide {...properties}>
         {slideImages.map((slide, index) => (
-          <div className="each-slide-effect relative" key={slide.src}>
-            <div className="slide-image relative">
+          <div className="each-slide-effect relative w-full h-full" key={slide.src}>
+            <div className="slide-image relative w-full h-full">
               <Image
                 src={`/${slide.src}`}
                 alt={slide.title}

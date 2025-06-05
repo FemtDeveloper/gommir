@@ -154,7 +154,9 @@ const ContactForm = () => {
                 messageSended
                   ? "bg-green-500 hover:bg-green-600"
                   : "bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600"
-              } ${isLoading ? "opacity-75 cursor-not-allowed" : "cursor-pointer"}`}
+              } ${
+                isLoading ? "opacity-75 cursor-not-allowed" : "cursor-pointer"
+              }`}
             >
               {isLoading ? (
                 <>

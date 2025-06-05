@@ -1,8 +1,7 @@
 import { NextPage } from "next";
-import Image from "next/image";
 import { useEffect, useState } from "react";
-import Layout from "../layouts/Layout";
 import ProjectCard from "../Components/ProjectCard";
+import Layout from "../layouts/Layout";
 
 const Nuevosproyectos: NextPage = () => {
   const [isVisible, setIsVisible] = useState(false);

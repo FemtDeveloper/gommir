@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import ProjectCard from "../ProjectCard";
 
 const NuevosProyectos = () => {
@@ -23,26 +23,27 @@ const NuevosProyectos = () => {
   }, []);
 
   const handleContactClick = () => {
-    const contactForm = document.getElementById('contact-form');
+    const contactForm = document.getElementById("contact-form");
     if (contactForm) {
-      contactForm.scrollIntoView({ behavior: 'smooth' });
+      contactForm.scrollIntoView({ behavior: "smooth" });
     } else {
-      router.push('/contactenos');
+      router.push("/contactenos");
     }
   };
 
   const handleMoreInfoClick = () => {
-    router.push('/nuevos-proyectos');
+    router.push("/nuevos-proyectos");
   };
 
   const project = {
     title: "Reserva de Punta Canoa",
-    description: "Nuevo proyecto próximo a comenzar en la ciudad de Cartagena de Indias. Un desarrollo residencial de lujo que combina arquitectura moderna con la belleza natural del Caribe.",
+    description:
+      "Nuevo proyecto próximo a comenzar en la ciudad de Cartagena de Indias. Un desarrollo residencial de lujo que combina arquitectura moderna con la belleza natural del Caribe.",
     image: "/cartagena-via.jpg",
     status: "Próximamente",
     location: "Punta Canoa, Cartagena",
     units: "En desarrollo",
-    area: "Por definir"
+    area: "Por definir",
   };
 
   return (
@@ -81,13 +82,13 @@ const NuevosProyectos = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button 
+                <button
                   onClick={handleContactClick}
                   className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
                 >
                   Contáctanos
                 </button>
-                <button 
+                <button
                   onClick={handleMoreInfoClick}
                   className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 cursor-pointer"
                 >
