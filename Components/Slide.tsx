@@ -31,14 +31,13 @@ const Slider = () => {
   };
 
   return (
-    <div className="relative w-full h-[400px] sm:h-[500px] md:h-[650px] lg:h-[750px] overflow-hidden group">
+    <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[90vh] min-h-[400px] max-h-[800px] overflow-hidden group">
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/30 z-10" />
 
       <Slide {...properties}>
         {slideImages.map((slide, index) => (
-          <div className="each-slide-effect relative w-full h-full" key={slide.src}>
-            <div className="slide-image relative w-full h-full">
+          <div className="each-slide-effect relative h-full" key={slide.src}>
+            <div className="slide-image relative h-full">
               <Image
                 src={`/${slide.src}`}
                 alt={slide.title}

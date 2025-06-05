@@ -42,7 +42,7 @@ export default function Home() {
         <div className="absolute top-20 left-10 w-32 h-32 bg-blue-100 rounded-full opacity-20 animate-float"></div>
         <div className="absolute bottom-20 right-10 w-24 h-24 bg-purple-100 rounded-full opacity-20 animate-float-delayed"></div>
 
-        <div className="container mx-auto px-4 py-20">
+        <div className="container mx-auto px-4 py-6 md:py-10">
           <div className="flex flex-col lg:flex-row justify-center items-center gap-12 my-8">
             <div
               className={`flex flex-col items-center lg:items-start justify-center gap-8 w-full lg:w-2/3 text-center lg:text-left px-4 transition-all duration-1000 ${
