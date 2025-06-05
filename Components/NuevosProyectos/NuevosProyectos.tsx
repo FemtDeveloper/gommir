@@ -1,34 +1,160 @@
-import CharacteriscticsCard from "../Characteristic/CharacteristicsCard";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import ProjectCard from "../ProjectCard";
 
 const NuevosProyectos = () => {
-  const styles = {
-    height: "340px",
+  const [isVisible, setIsVisible] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    const section = document.getElementById("nuevos-proyectos");
+    if (section) observer.observe(section);
+
+    return () => observer.disconnect();
+  }, []);
+
+  const handleContactClick = () => {
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      router.push('/contactenos');
+    }
   };
+
+  const handleMoreInfoClick = () => {
+    router.push('/nuevos-proyectos');
+  };
+
+  const project = {
+    title: "Reserva de Punta Canoa",
+    description: "Nuevo proyecto próximo a comenzar en la ciudad de Cartagena de Indias. Un desarrollo residencial de lujo que combina arquitectura moderna con la belleza natural del Caribe.",
+    image: "/cartagena-via.jpg",
+    status: "Próximamente",
+    location: "Punta Canoa, Cartagena",
+    units: "En desarrollo",
+    area: "Por definir"
+  };
+
   return (
-    <div className="bg-gradient-to-r from-blue-50 to-gray-100 py-16">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-8">
-          <div className="text-center lg:text-left lg:w-1/2">
-            <h1 className="text-4xl lg:text-5xl font-bold text-[#000f40] mb-6">
-              Nuevos Proyectos
-            </h1>
-            <p className="text-lg text-gray-700 leading-relaxed max-w-md mx-auto lg:mx-0">
-              Descubre nuestros próximos desarrollos inmobiliarios que
-              transformarán el panorama urbano.
-            </p>
+    <section
+      id="nuevos-proyectos"
+      className="relative bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 py-20 overflow-hidden"
+    >
+      {/* Animated Background Elements */}
+      <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-br from-blue-200/30 to-purple-200/30 rounded-full -translate-x-1/2 -translate-y-1/2 animate-float"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-indigo-200/30 to-blue-200/30 rounded-full translate-x-1/2 translate-y-1/2 animate-float-delayed"></div>
+
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-12">
+          <div
+            className={`text-center lg:text-left lg:w-1/2 transition-all duration-1000 ${
+              isVisible
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 -translate-x-10"
+            }`}
+          >
+            <div className="space-y-6">
+              <span className="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold tracking-wide uppercase">
+                Próximamente
+              </span>
+
+              <h1 className="text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-purple-800 to-indigo-900 leading-tight">
+                Nuevos Proyectos
+              </h1>
+
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mx-auto lg:mx-0"></div>
+
+              <p className="text-xl text-gray-700 leading-relaxed max-w-lg mx-auto lg:mx-0 font-light">
+                Estamos trabajando en emocionantes nuevos desarrollos
+                inmobiliarios. Mantente informado sobre nuestros próximos
+                proyectos.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <button 
+                  onClick={handleContactClick}
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
+                >
+                  Contáctanos
+                </button>
+                <button 
+                  onClick={handleMoreInfoClick}
+                  className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 cursor-pointer"
+                >
+                  Más Información
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="lg:w-1/2 flex justify-center">
-            <CharacteriscticsCard
-              cardTitle="Reserva de Punta Canoa"
-              cardText="Nuevo proyecto próximo a comenzar en la ciudad de Cartagena de Indias"
-              cardMedia="/cartagena-via.jpg"
-              cardStyles={styles}
-              cardLink={"nuevos-proyectos"}
-            />
+
+          <div
+            className={`lg:w-1/2 flex justify-center transition-all duration-1000 delay-300 ${
+              isVisible
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 translate-x-10"
+            }`}
+          >
+            {/* Enhanced ProjectCard Display */}
+            <div className="relative w-full max-w-sm mx-auto">
+              {/* Enhanced glowing background effect */}
+              <div className="absolute -inset-4 md:-inset-8 bg-gradient-to-r from-blue-600/30 to-purple-600/30 rounded-3xl blur-2xl animate-pulse-glow"></div>
+
+              <div className="relative z-10">
+                <ProjectCard
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  status={project.status}
+                  location={project.location}
+                  units={project.units}
+                  area={project.area}
+                  isVisible={isVisible}
+                  delay={300}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Stats Section */}
+        <div
+          className={`mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 transition-all duration-1000 delay-500 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
+          <div className="text-center group">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg group-hover:shadow-xl transition-all duration-300 border border-white/20">
+              <div className="text-3xl font-bold text-blue-900 mb-2">15+</div>
+              <div className="text-gray-600">Años de Experiencia</div>
+            </div>
+          </div>
+          <div className="text-center group">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg group-hover:shadow-xl transition-all duration-300 border border-white/20">
+              <div className="text-3xl font-bold text-purple-900 mb-2">20+</div>
+              <div className="text-gray-600">Proyectos Completados</div>
+            </div>
+          </div>
+          <div className="text-center group">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg group-hover:shadow-xl transition-all duration-300 border border-white/20">
+              <div className="text-3xl font-bold text-indigo-900 mb-2">
+                100%
+              </div>
+              <div className="text-gray-600">Satisfacción del Cliente</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
