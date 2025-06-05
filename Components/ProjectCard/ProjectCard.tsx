@@ -150,7 +150,7 @@ const ProjectCard = ({
           <div className="pt-4 border-t border-gray-100 space-y-3">
             <button
               onClick={handleMoreInfo}
-              className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white font-medium py-3 px-6 rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 cursor-pointer"
+              className="w-full bg-gradient-to-r from-[#5bb792] to-[#19466f] text-white font-medium py-3 px-6 rounded-lg hover:from-[#4da583] hover:to-[#15395e] transition-all duration-300 transform hover:scale-105 cursor-pointer"
             >
               Más información
             </button>

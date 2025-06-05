@@ -37,7 +37,7 @@ export default function Home() {
       <Slider />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-white via-blue-50/30 to-white overflow-hidden">
+      <section className="relative bg-gradient-to-b from-white via-[#5bb792]/5 to-white overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute top-20 left-10 w-32 h-32 bg-blue-100 rounded-full opacity-20 animate-float"></div>
         <div className="absolute bottom-20 right-10 w-24 h-24 bg-purple-100 rounded-full opacity-20 animate-float-delayed"></div>
@@ -52,10 +52,10 @@ export default function Home() {
               }`}
             >
               <div className="space-y-6">
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-blue-800 to-purple-900 mb-6 leading-tight">
+                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#19466f] via-[#5bb792] to-[#19466f] mb-6 leading-tight">
                   Gommir
                 </h1>
-                <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mx-auto lg:mx-0"></div>
+                <div className="w-24 h-1 bg-gradient-to-r from-[#5bb792] to-[#19466f] rounded-full mx-auto lg:mx-0"></div>
               </div>
 
               <p className="text-xl leading-relaxed text-gray-700 max-w-4xl font-light">
@@ -68,10 +68,10 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer">
+                <button className="bg-gradient-to-r from-[#5bb792] to-[#19466f] hover:from-[#4da583] hover:to-[#15395e] text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer">
                   Nuestros Proyectos
                 </button>
-                <button className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                <button className="border-2 border-[#19466f] text-[#19466f] hover:bg-[#19466f] hover:text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 cursor-pointer">
                   Contáctanos
                 </button>
               </div>
@@ -87,7 +87,7 @@ export default function Home() {
               {/* Enhanced CharacteristicsCard Display */}
               <div className="relative w-full max-w-md mx-auto">
                 {/* Enhanced glowing background effect */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-blue-600/30 to-purple-600/30 rounded-3xl blur-2xl animate-pulse-glow"></div>
+                <div className="absolute -inset-4 bg-gradient-to-r from-[#5bb792]/30 to-[#19466f]/30 rounded-3xl blur-2xl animate-pulse-glow"></div>
 
                 <div className="relative z-10">
                   <CharacteriscticsCard
@@ -107,12 +107,12 @@ export default function Home() {
       <NuevosProyectos />
 
       {/* Mobile version */}
-      <div className="lg:hidden p-6 bg-gradient-to-b from-gray-50 to-white">
+      <div className="lg:hidden p-6 bg-gradient-to-b from-[#5bb792]/5 to-white">
         <div className="text-center mb-8">
-          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-purple-900 mb-4">
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#19466f] to-[#5bb792] mb-4">
             Nuestras Cualidades
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#5bb792] to-[#19466f] rounded-full mx-auto"></div>
         </div>
         <div className="flex justify-center">
           <CharacteriscticsCard
@@ -126,20 +126,20 @@ export default function Home() {
       </div>
 
       {/* Desktop version */}
-      <section className="hidden lg:block py-20 bg-gradient-to-b from-gray-50 via-white to-gray-50 relative overflow-hidden">
+      <section className="hidden lg:block py-20 bg-gradient-to-b from-[#5bb792]/5 via-white to-[#5bb792]/5 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-10 left-10 w-40 h-40 bg-blue-600 rounded-full"></div>
-          <div className="absolute bottom-10 right-10 w-32 h-32 bg-purple-600 rounded-full"></div>
-          <div className="absolute top-1/2 left-1/4 w-20 h-20 bg-blue-400 rounded-full"></div>
+          <div className="absolute top-10 left-10 w-40 h-40 bg-[#5bb792] rounded-full"></div>
+          <div className="absolute bottom-10 right-10 w-32 h-32 bg-[#19466f] rounded-full"></div>
+          <div className="absolute top-1/2 left-1/4 w-20 h-20 bg-[#5bb792] rounded-full"></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h1 className="text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-blue-800 to-purple-900 mb-6">
+            <h1 className="text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#19466f] via-[#5bb792] to-[#19466f] mb-6">
               Nuestras Cualidades
             </h1>
-            <div className="w-32 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mx-auto mb-6"></div>
+            <div className="w-32 h-1 bg-gradient-to-r from-[#5bb792] to-[#19466f] rounded-full mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Descubra los valores y principios que nos distinguen en cada
               proyecto

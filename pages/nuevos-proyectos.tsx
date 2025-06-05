@@ -58,12 +58,12 @@ const Nuevosproyectos: NextPage = () => {
       pageDescription="Nuevos proyectos en Cartagena de la empresa Gommir"
       title="Nuevos proyectos"
     >
-      <div className="relative bg-gradient-to-b from-white via-blue-50/20 to-white overflow-hidden min-h-screen">
+      <div className="relative bg-gradient-to-b from-white via-[#5bb792]/5 to-white overflow-hidden min-h-screen">
         {/* Floating Background Elements */}
-        <div className="absolute top-20 left-10 w-32 h-32 bg-blue-100 rounded-full opacity-10 animate-float"></div>
-        <div className="absolute bottom-40 right-10 w-24 h-24 bg-purple-100 rounded-full opacity-10 animate-float-delayed"></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-green-100 rounded-full opacity-10 animate-float"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-20 h-20 bg-orange-100 rounded-full opacity-10 animate-float-delayed"></div>
+        <div className="absolute top-20 left-10 w-32 h-32 bg-[#5bb792]/10 rounded-full opacity-10 animate-float"></div>
+        <div className="absolute bottom-40 right-10 w-24 h-24 bg-[#19466f]/10 rounded-full opacity-10 animate-float-delayed"></div>
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-[#5bb792]/10 rounded-full opacity-10 animate-float"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-20 h-20 bg-[#19466f]/10 rounded-full opacity-10 animate-float-delayed"></div>
 
         <div className="container mx-auto px-4 py-16 relative z-10">
           {/* Header Section */}
@@ -74,14 +74,14 @@ const Nuevosproyectos: NextPage = () => {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full text-sm font-medium text-blue-800 mb-4">
+            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#5bb792]/10 to-[#19466f]/10 rounded-full text-sm font-medium text-[#19466f] mb-4">
               <span className="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></span>
               Innovación Inmobiliaria
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-900 via-purple-700 to-pink-600 bg-clip-text text-transparent leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#19466f] via-[#5bb792] to-[#19466f] bg-clip-text text-transparent leading-tight">
               Nuevos Proyectos
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#5bb792] to-[#19466f] rounded-full mx-auto"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Conoce nuestro próximo desarrollo inmobiliario en la hermosa
               ciudad de Cartagena
@@ -115,10 +115,10 @@ const Nuevosproyectos: NextPage = () => {
             }`}
           >
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-800 to-purple-600 bg-clip-text text-transparent mb-4">
+              <h2 className="text-4xl font-bold bg-gradient-to-r from-[#19466f] to-[#5bb792] bg-clip-text text-transparent mb-4">
                 Próximos Desarrollos
               </h2>
-              <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto mb-4"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-[#5bb792] to-[#19466f] rounded-full mx-auto mb-4"></div>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Estamos evaluando nuevas oportunidades de inversión y desarrollo
                 en la región Caribe
@@ -127,7 +127,7 @@ const Nuevosproyectos: NextPage = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center p-6 bg-white/30 backdrop-blur-sm rounded-xl border border-gray-100 hover:shadow-lg transition-all duration-300">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#5bb792] to-[#5bb792]/80 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
                     fill="none"
@@ -151,7 +151,7 @@ const Nuevosproyectos: NextPage = () => {
               </div>
 
               <div className="text-center p-6 bg-white/30 backdrop-blur-sm rounded-xl border border-gray-100 hover:shadow-lg transition-all duration-300">
-                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#19466f] to-[#19466f]/80 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
                     fill="none"
@@ -175,7 +175,7 @@ const Nuevosproyectos: NextPage = () => {
               </div>
 
               <div className="text-center p-6 bg-white/30 backdrop-blur-sm rounded-xl border border-gray-100 hover:shadow-lg transition-all duration-300">
-                <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#5bb792]/80 to-[#19466f] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
                     fill="none"
@@ -208,7 +208,7 @@ const Nuevosproyectos: NextPage = () => {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl p-8 text-white">
+            <div className="bg-gradient-to-r from-[#5bb792] to-[#19466f] rounded-2xl p-8 text-white">
               <h2 className="text-3xl font-bold mb-4">
                 ¿Interesado en nuestros proyectos?
               </h2>

@@ -86,7 +86,7 @@ const Cualidades: NextPage = () => {
       title="Gommir - Cualidades"
       pageDescription="Cualidades destacadas de la empresa Gommir"
     >
-      <div className="relative bg-gradient-to-b from-white via-blue-50/20 to-white overflow-hidden min-h-screen">
+      <div className="relative bg-gradient-to-b from-white via-[#5bb792]/5 to-white overflow-hidden min-h-screen">
         {/* Floating Background Elements */}
         <div className="absolute top-20 left-10 w-32 h-32 bg-blue-100 rounded-full opacity-10 animate-float"></div>
         <div className="absolute bottom-40 right-10 w-24 h-24 bg-purple-100 rounded-full opacity-10 animate-float-delayed"></div>
@@ -102,14 +102,14 @@ const Cualidades: NextPage = () => {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full text-sm font-medium text-blue-800 mb-4">
+            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#5bb792]/10 to-[#19466f]/10 rounded-full text-sm font-medium text-[#19466f] mb-4">
               <span className="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></span>
               Nuestra Esencia
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-900 via-purple-700 to-pink-600 bg-clip-text text-transparent leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#19466f] via-[#5bb792] to-[#19466f] bg-clip-text text-transparent leading-tight">
               Nuestras Cualidades
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#5bb792] to-[#19466f] rounded-full mx-auto"></div>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Los valores que nos definen y guían cada uno de nuestros proyectos
             </p>
@@ -153,7 +153,7 @@ const Cualidades: NextPage = () => {
             <div className="bg-white/50 backdrop-blur-sm rounded-2xl border border-gray-100 p-8 shadow-lg">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div className="space-y-2">
-                  <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-[#5bb792] to-[#19466f] bg-clip-text text-transparent">
                     15+
                   </div>
                   <div className="text-sm text-gray-600">
@@ -161,7 +161,7 @@ const Cualidades: NextPage = () => {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <div className="text-3xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-[#19466f] to-[#5bb792] bg-clip-text text-transparent">
                     200+
                   </div>
                   <div className="text-sm text-gray-600">
@@ -169,7 +169,7 @@ const Cualidades: NextPage = () => {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-[#5bb792]/80 to-[#19466f] bg-clip-text text-transparent">
                     98%
                   </div>
                   <div className="text-sm text-gray-600">
@@ -177,7 +177,7 @@ const Cualidades: NextPage = () => {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <div className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-[#19466f]/80 to-[#5bb792] bg-clip-text text-transparent">
                     24/7
                   </div>
                   <div className="text-sm text-gray-600">Soporte Continuo</div>

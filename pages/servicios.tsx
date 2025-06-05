@@ -41,10 +41,10 @@ const Servicios: NextPage = () => {
         "GOMMIR es una empresa que se encarga de realizar los trámites necesarios para que el terreno deseado cumpla con todos los trámites necesarios para su posterior utilización dentro de cualquier proyecto.",
       image: "/saneamiento.jpg",
       badge: "Documentación",
-      gradientFrom: "from-blue-100",
-      gradientTo: "to-green-100",
-      textColor: "text-blue-800",
-      dotColor: "bg-blue-500",
+      gradientFrom: "from-[#5bb792]/10",
+      gradientTo: "to-[#19466f]/10",
+      textColor: "text-[#19466f]",
+      dotColor: "bg-[#5bb792]",
     },
     {
       title: "Adecuación de terrenos",
@@ -52,10 +52,10 @@ const Servicios: NextPage = () => {
         "Se hace un trabajo operativo en el terreno con maquinaria y personal especializado, adecuando y dejándolo apto para la ejecución de cualquier proyecto inmobiliario que se requiera.",
       image: "/adecuacion.jpg",
       badge: "Preparación",
-      gradientFrom: "from-orange-100",
-      gradientTo: "to-red-100",
-      textColor: "text-orange-800",
-      dotColor: "bg-orange-500",
+      gradientFrom: "from-[#19466f]/10",
+      gradientTo: "to-[#5bb792]/10",
+      textColor: "text-[#19466f]",
+      dotColor: "bg-[#19466f]",
     },
     {
       title: "Ejecución De Proyectos",
@@ -63,10 +63,10 @@ const Servicios: NextPage = () => {
         "En Gommir nos enorgullecemos de nuestra capacidad para ejecutar proyectos de manera experta de principio a fin. Con un equipo de profesionales calificados y un compromiso con la excelencia, tenemos un historial comprobado de brindar resultados de alta calidad a tiempo y dentro del presupuesto.",
       image: "/ejecucion.jpg",
       badge: "Construcción",
-      gradientFrom: "from-purple-100",
-      gradientTo: "to-pink-100",
-      textColor: "text-purple-800",
-      dotColor: "bg-purple-500",
+      gradientFrom: "from-[#5bb792]/10",
+      gradientTo: "to-[#19466f]/20",
+      textColor: "text-[#5bb792]",
+      dotColor: "bg-[#5bb792]",
     },
   ];
 
@@ -84,10 +84,10 @@ const Servicios: NextPage = () => {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-[#19466f]/30 via-transparent to-[#19466f]/40"></div>
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white space-y-4 animate-fade-in-up">
-              <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+              <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-white to-[#5bb792]/20 bg-clip-text text-transparent">
                 Nuestros Servicios
               </h1>
               <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto px-4">
@@ -99,7 +99,7 @@ const Servicios: NextPage = () => {
       </div>
 
       {/* Services Section */}
-      <div className="relative bg-gradient-to-b from-white via-blue-50/20 to-white overflow-hidden">
+      <div className="relative bg-gradient-to-b from-white via-[#5bb792]/5 to-white overflow-hidden">
         {/* Floating Elements */}
         <div className="absolute top-20 left-10 w-32 h-32 bg-blue-100 rounded-full opacity-10 animate-float"></div>
         <div className="absolute bottom-40 right-10 w-24 h-24 bg-purple-100 rounded-full opacity-10 animate-float-delayed"></div>
@@ -134,10 +134,10 @@ const Servicios: NextPage = () => {
                     ></span>
                     {service.badge}
                   </div>
-                  <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-700 to-gray-600 bg-clip-text text-transparent leading-tight">
+                  <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#19466f] via-[#5bb792] to-[#19466f] bg-clip-text text-transparent leading-tight">
                     {service.title}
                   </h2>
-                  <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
+                  <div className="w-20 h-1 bg-gradient-to-r from-[#5bb792] to-[#19466f] rounded-full"></div>
                   <p className="text-gray-700 leading-relaxed text-lg max-w-xl">
                     {service.description}
                   </p>
@@ -166,7 +166,7 @@ const Servicios: NextPage = () => {
                       alt={service.title}
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="absolute inset-0 bg-gradient-to-tr from-[#5bb792]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                     {/* Overlay with service number */}
                     <div className="absolute top-4 left-4">

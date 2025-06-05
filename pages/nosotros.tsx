@@ -48,10 +48,10 @@ const Nosotros: NextPage = () => {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-[#19466f]/20 via-transparent to-[#19466f]/30"></div>
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white space-y-4 animate-fade-in-up">
-              <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+              <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-white to-[#5bb792]/20 bg-clip-text text-transparent">
                 Nosotros
               </h1>
               <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto px-4">
@@ -63,7 +63,7 @@ const Nosotros: NextPage = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative bg-gradient-to-b from-white via-blue-50/20 to-white overflow-hidden">
+      <div className="relative bg-gradient-to-b from-white via-[#5bb792]/5 to-white overflow-hidden">
         {/* Floating Elements */}
         <div className="absolute top-20 left-10 w-32 h-32 bg-blue-100 rounded-full opacity-10 animate-float"></div>
         <div className="absolute bottom-40 right-10 w-24 h-24 bg-purple-100 rounded-full opacity-10 animate-float-delayed"></div>
@@ -84,7 +84,7 @@ const Nosotros: NextPage = () => {
           >
             <div className="flex flex-col lg:flex-row gap-12 items-center">
               <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left w-full lg:w-1/2 space-y-6">
-                <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full text-sm font-medium text-blue-800 mb-4">
+                <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-[#5bb792]/10 to-[#19466f]/10 rounded-full text-sm font-medium text-[#19466f] mb-4">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></span>
                   Nuestra Historia
                 </div>

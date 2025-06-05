@@ -50,11 +50,11 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="relative bg-gradient-to-br from-gray-50 to-blue-50 overflow-hidden"
+      className="relative bg-gradient-to-br from-gray-50 to-[#5bb792]/5 overflow-hidden"
     >
       {/* Background Elements */}
-      <div className="absolute top-10 left-10 w-24 h-24 bg-blue-100 rounded-full opacity-20 animate-float"></div>
-      <div className="absolute bottom-10 right-10 w-32 h-32 bg-purple-100 rounded-full opacity-20 animate-float-delayed"></div>
+      <div className="absolute top-10 left-10 w-24 h-24 bg-[#5bb792]/10 rounded-full opacity-20 animate-float"></div>
+      <div className="absolute bottom-10 right-10 w-32 h-32 bg-[#19466f]/10 rounded-full opacity-20 animate-float-delayed"></div>
 
       <div className="relative z-10 container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
@@ -92,10 +92,10 @@ const Footer = () => {
             }`}
           >
             <div className="text-center lg:text-left mb-8">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-900 to-purple-600 bg-clip-text text-transparent mb-2">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-[#19466f] to-[#5bb792] bg-clip-text text-transparent mb-2">
                 Información de Contacto
               </h3>
-              <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto lg:mx-0"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-[#5bb792] to-[#19466f] rounded-full mx-auto lg:mx-0"></div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

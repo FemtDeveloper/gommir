@@ -70,7 +70,7 @@ const ContactForm = () => {
               htmlFor="name"
               className="flex items-center text-sm font-medium text-gray-700 mb-2"
             >
-              <User size={16} className="mr-2 text-blue-500" />
+              <User size={16} className="mr-2 text-[#19466f]" />
               Nombre Completo
             </label>
             <div className="relative">
@@ -80,7 +80,7 @@ const ContactForm = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 pl-12 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white/50 backdrop-blur-sm hover:shadow-md"
+                className="w-full px-4 py-3 pl-12 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#19466f] focus:border-transparent transition-all duration-300 bg-white/50 backdrop-blur-sm hover:shadow-md"
                 placeholder="Ingrese su nombre completo"
                 required
               />
@@ -97,7 +97,7 @@ const ContactForm = () => {
               htmlFor="email"
               className="flex items-center text-sm font-medium text-gray-700 mb-2"
             >
-              <Mail size={16} className="mr-2 text-green-500" />
+              <Mail size={16} className="mr-2 text-[#5bb792]" />
               Correo Electrónico
             </label>
             <div className="relative">
@@ -107,7 +107,7 @@ const ContactForm = () => {
                 name="user-email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 pl-12 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 bg-white/50 backdrop-blur-sm hover:shadow-md"
+                className="w-full px-4 py-3 pl-12 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#5bb792] focus:border-transparent transition-all duration-300 bg-white/50 backdrop-blur-sm hover:shadow-md"
                 placeholder="ejemplo@correo.com"
                 required
               />
@@ -124,7 +124,7 @@ const ContactForm = () => {
               htmlFor="message"
               className="flex items-center text-sm font-medium text-gray-700 mb-2"
             >
-              <MessageSquare size={16} className="mr-2 text-purple-500" />
+              <MessageSquare size={16} className="mr-2 text-[#19466f]" />
               Mensaje
             </label>
             <div className="relative">
@@ -134,7 +134,7 @@ const ContactForm = () => {
                 rows={5}
                 value={formData.message}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 pl-12 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 bg-white/50 backdrop-blur-sm hover:shadow-md resize-none"
+                className="w-full px-4 py-3 pl-12 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#19466f] focus:border-transparent transition-all duration-300 bg-white/50 backdrop-blur-sm hover:shadow-md resize-none"
                 placeholder="Cuéntanos sobre tu proyecto o consulta..."
                 required
               />
@@ -153,7 +153,7 @@ const ContactForm = () => {
               className={`w-full flex items-center justify-center space-x-2 py-4 px-6 rounded-lg font-medium text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
                 messageSended
                   ? "bg-green-500 hover:bg-green-600"
-                  : "bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600"
+                  : "bg-gradient-to-r from-[#5bb792] to-[#19466f] hover:from-[#4da583] hover:to-[#15395e]"
               } ${
                 isLoading ? "opacity-75 cursor-not-allowed" : "cursor-pointer"
               }`}
@@ -196,24 +196,24 @@ const ContactForm = () => {
         {/* Contact Info Cards */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="text-center p-4 bg-white/30 backdrop-blur-sm rounded-lg border border-gray-100 hover:shadow-md transition-all duration-300">
-            <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
-              <Mail size={20} className="text-blue-600" />
+            <div className="w-10 h-10 bg-[#19466f]/10 rounded-full flex items-center justify-center mx-auto mb-3">
+              <Mail size={20} className="text-[#19466f]" />
             </div>
             <p className="text-sm text-gray-600">Respuesta en</p>
             <p className="font-semibold text-gray-900">24 horas</p>
           </div>
 
           <div className="text-center p-4 bg-white/30 backdrop-blur-sm rounded-lg border border-gray-100 hover:shadow-md transition-all duration-300">
-            <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-              <Check size={20} className="text-green-600" />
+            <div className="w-10 h-10 bg-[#5bb792]/10 rounded-full flex items-center justify-center mx-auto mb-3">
+              <Check size={20} className="text-[#5bb792]" />
             </div>
             <p className="text-sm text-gray-600">Soporte</p>
             <p className="font-semibold text-gray-900">Personalizado</p>
           </div>
 
           <div className="text-center p-4 bg-white/30 backdrop-blur-sm rounded-lg border border-gray-100 hover:shadow-md transition-all duration-300">
-            <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
-              <Send size={20} className="text-purple-600" />
+            <div className="w-10 h-10 bg-gradient-to-r from-[#5bb792]/10 to-[#19466f]/10 rounded-full flex items-center justify-center mx-auto mb-3">
+              <Send size={20} className="text-[#19466f]" />
             </div>
             <p className="text-sm text-gray-600">Consulta</p>
             <p className="font-semibold text-gray-900">Gratuita</p>

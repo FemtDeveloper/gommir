@@ -5,18 +5,18 @@ import "react-slideshow-image/dist/styles.css";
 const slideImages = [
   {
     src: "sunset.jpg",
-    title: "Proyectos Residenciales",
-    subtitle: "Creando hogares excepcionales",
+    title: "Saneamiento de Tierras",
+    subtitle: "Documentación y legalización de predios",
   },
   {
     src: "wall.jpg",
-    title: "Construcción Comercial",
-    subtitle: "Espacios que inspiran negocios",
+    title: "Adecuación de Terrenos",
+    subtitle: "Preparación especializada para todo tipo de proyectos",
   },
   {
     src: "ground.jpg",
-    title: "Desarrollo Urbano",
-    subtitle: "Transformando ciudades del futuro",
+    title: "Ejecución de Proyectos",
+    subtitle: "Transformando ideas en desarrollo sostenible",
   },
 ];
 
@@ -49,15 +49,15 @@ const Slider = () => {
 
               {/* Content Overlay */}
               <div className="absolute inset-0 flex items-center justify-center z-20">
-                <div className="text-center text-white px-4 max-w-4xl animate-fade-in-up">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-2xl animate-slide-in-left">
+                <div className="text-center text-white px-4 max-w-4xl">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-2xl">
                     {slide.title}
                   </h1>
-                  <p className="text-lg sm:text-xl md:text-2xl font-light opacity-90 drop-shadow-lg animate-slide-in-right delay-300">
+                  <p className="text-lg sm:text-xl md:text-2xl font-light opacity-90 drop-shadow-lg">
                     {slide.subtitle}
                   </p>
-                  <div className="mt-8 animate-fade-in delay-700">
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer">
+                  <div className="mt-8">
+                    <button className="bg-gradient-to-r from-[#5bb792] to-[#19466f] hover:from-[#4da583] hover:to-[#15395e] text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer">
                       Conocer Más
                     </button>
                   </div>

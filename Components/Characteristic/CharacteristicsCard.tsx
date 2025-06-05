@@ -30,9 +30,9 @@ const CharacteriscticsCard = ({
     >
       {/* Floating Title Badge */}
       <div className="relative mb-4">
-        <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 px-6 py-3 text-white rounded-2xl text-center text-lg font-bold shadow-lg transform -rotate-1 hover:rotate-0 transition-transform duration-300 border border-blue-700">
+        <div className="bg-gradient-to-r from-[#19466f] via-[#5bb792] to-[#19466f] px-6 py-3 text-white rounded-2xl text-center text-lg font-bold shadow-lg transform -rotate-1 hover:rotate-0 transition-transform duration-300 border border-[#19466f]/70">
           <span className="relative z-10">{cardTitle}</span>
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-2xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#5bb792]/20 to-[#19466f]/20 rounded-2xl"></div>
         </div>
       </div>
 
@@ -45,7 +45,7 @@ const CharacteriscticsCard = ({
         onMouseLeave={() => setIsHovered(false)}
       >
         {/* Background Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-purple-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#5bb792]/5 to-[#19466f]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
         {/* Image Container */}
         <div className="relative h-56 w-full overflow-hidden">
@@ -62,8 +62,8 @@ const CharacteriscticsCard = ({
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
           {/* Floating Elements */}
-          <div className="absolute top-4 right-4 w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
-          <div className="absolute top-8 right-8 w-1 h-1 bg-purple-400 rounded-full animate-pulse delay-500"></div>
+          <div className="absolute top-4 right-4 w-2 h-2 bg-[#5bb792] rounded-full animate-pulse"></div>
+          <div className="absolute top-8 right-8 w-1 h-1 bg-[#19466f] rounded-full animate-pulse delay-500"></div>
         </div>
 
         {/* Content */}

@@ -231,7 +231,7 @@ a {
   width: 50%;
   margin-top: 15px;
   border: none;
-  background: linear-gradient(90deg, #5cb790 0%, #100230 100%);
+  background: linear-gradient(90deg, #5bb792 0%, #19466f 100%);
 }
 .emailSended {
   background-color: #08640e;
@@ -254,7 +254,7 @@ a {
 }
 .enviado {
   position: absolute;
-  background: linear-gradient(90deg, #5cb790 0%, #100230 100%);
+  background: linear-gradient(90deg, #5bb792 0%, #19466f 100%);
   color: #ffffff;
   border-radius: 5px;
   font-weight: 600;
@@ -327,9 +327,24 @@ a {
   }
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Animation classes with fill mode */
 .animate-fade-in-up {
   animation: fade-in-up 0.6s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0; /* Start hidden, animation will show */
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out;
   animation-fill-mode: forwards;
   opacity: 0; /* Start hidden, animation will show */
 }
@@ -463,14 +478,17 @@ a {
 
 .animate-slide-in-left {
   animation: slide-in-left 0.4s ease-out;
+  animation-fill-mode: forwards;
 }
 
 .animate-slide-in-right {
   animation: slide-in-right 0.4s ease-out;
+  animation-fill-mode: forwards;
 }
 
 .animate-scale-in {
   animation: scale-in 0.3s ease-out;
+  animation-fill-mode: forwards;
 }
 
 .animate-glow-pulse {

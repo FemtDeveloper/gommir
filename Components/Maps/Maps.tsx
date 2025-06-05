@@ -77,11 +77,11 @@ export default function MyMap() {
   return (
     <section
       id="map-section"
-      className="relative bg-gradient-to-b from-white to-blue-50/30 py-16 overflow-hidden"
+      className="relative bg-gradient-to-b from-white to-[#5bb792]/5 py-16 overflow-hidden"
     >
       {/* Background Elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-blue-100 rounded-full opacity-10 animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-24 h-24 bg-purple-100 rounded-full opacity-10 animate-float-delayed"></div>
+      <div className="absolute top-20 left-10 w-32 h-32 bg-[#5bb792]/10 rounded-full opacity-10 animate-float"></div>
+      <div className="absolute bottom-20 right-10 w-24 h-24 bg-[#19466f]/10 rounded-full opacity-10 animate-float-delayed"></div>
 
       <div className="container mx-auto px-4">
         {/* Header */}
@@ -90,14 +90,14 @@ export default function MyMap() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full text-sm font-medium text-blue-800 mb-4">
+          <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#5bb792]/20 to-[#19466f]/20 rounded-full text-sm font-medium text-[#19466f] mb-4">
             <MapPin size={16} className="mr-2" />
             Nuestra Ubicación
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-900 via-purple-700 to-pink-600 bg-clip-text text-transparent mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#19466f] via-[#5bb792] to-[#19466f] bg-clip-text text-transparent mb-4">
             Encuéntranos
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto mb-4"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#5bb792] to-[#19466f] rounded-full mx-auto mb-4"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Estamos ubicados en el corazón de Cartagena, listos para atenderte
           </p>
@@ -127,7 +127,7 @@ export default function MyMap() {
                 style={{ transitionDelay: `${400 + index * 100}ms` }}
               >
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg flex items-center justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-[#5bb792]/20 to-[#19466f]/20 rounded-lg flex items-center justify-center">
                     {info.icon}
                   </div>
                   <div className="flex-1">
@@ -142,7 +142,7 @@ export default function MyMap() {
             ))}
 
             <div className="mt-8">
-              <button className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white font-medium py-3 px-6 rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 cursor-pointer">
+              <button className="w-full bg-gradient-to-r from-[#5bb792] to-[#19466f] text-white font-medium py-3 px-6 rounded-lg hover:from-[#4da583] hover:to-[#15395e] transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 cursor-pointer">
                 <Navigation size={20} />
                 <span>Cómo llegar</span>
               </button>

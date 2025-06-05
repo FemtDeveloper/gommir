@@ -40,7 +40,7 @@ const Navbar = () => {
                 33vw"
               />
             </div>
-            <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 tracking-wide group-hover:from-blue-700 group-hover:to-purple-700 transition-all duration-300">
+            <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#19466f] to-[#5bb792] tracking-wide group-hover:from-[#5bb792] group-hover:to-[#19466f] transition-all duration-300">
               GOMMIR
             </span>
           </div>

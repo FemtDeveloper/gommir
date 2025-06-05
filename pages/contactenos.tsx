@@ -15,7 +15,7 @@ const Contactenos = () => {
       pageDescription="Formulario de contacto de Gommir"
       title="Gommir - Contáctanos"
     >
-      <div className="relative bg-gradient-to-b from-white via-blue-50/20 to-white overflow-hidden min-h-screen">
+      <div className="relative bg-gradient-to-b from-white via-[#5bb792]/5 to-white overflow-hidden min-h-screen">
         {/* Floating Background Elements */}
         <div className="absolute top-20 left-10 w-32 h-32 bg-blue-100 rounded-full opacity-10 animate-float"></div>
         <div className="absolute bottom-40 right-10 w-24 h-24 bg-purple-100 rounded-full opacity-10 animate-float-delayed"></div>
@@ -30,14 +30,14 @@ const Contactenos = () => {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full text-sm font-medium text-blue-800 mb-4">
+            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#5bb792]/10 to-[#19466f]/10 rounded-full text-sm font-medium text-[#19466f] mb-4">
               <span className="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></span>
               Hablemos
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-900 via-purple-700 to-pink-600 bg-clip-text text-transparent leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#19466f] via-[#5bb792] to-[#19466f] bg-clip-text text-transparent leading-tight">
               Contáctanos
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#5bb792] to-[#19466f] rounded-full mx-auto"></div>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Estamos aquí para ayudarte a hacer realidad tu próximo proyecto
             </p>
@@ -67,7 +67,7 @@ const Contactenos = () => {
             }`}
           >
             <div className="text-center p-6 bg-white/50 backdrop-blur-sm rounded-xl border border-gray-100 hover:shadow-lg transition-all duration-300 hover:scale-105">
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#5bb792] to-[#19466f] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-6 h-6 text-white"
                   fill="none"
@@ -87,7 +87,7 @@ const Contactenos = () => {
             </div>
 
             <div className="text-center p-6 bg-white/50 backdrop-blur-sm rounded-xl border border-gray-100 hover:shadow-lg transition-all duration-300 hover:scale-105">
-              <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#19466f] to-[#5bb792] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-6 h-6 text-white"
                   fill="none"
@@ -107,7 +107,7 @@ const Contactenos = () => {
             </div>
 
             <div className="text-center p-6 bg-white/50 backdrop-blur-sm rounded-xl border border-gray-100 hover:shadow-lg transition-all duration-300 hover:scale-105">
-              <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#5bb792]/80 to-[#19466f] rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-6 h-6 text-white"
                   fill="none"
