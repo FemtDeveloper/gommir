@@ -135,13 +135,17 @@ const NuevosProyectos = () => {
         >
           <div className="text-center group">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg group-hover:shadow-xl transition-all duration-300 border border-white/20">
-              <div className="text-3xl font-bold bg-gradient-to-r from-[#5bb792] to-[#19466f] bg-clip-text text-transparent mb-2">15+</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-[#5bb792] to-[#19466f] bg-clip-text text-transparent mb-2">
+                15+
+              </div>
               <div className="text-gray-600">Años de Experiencia</div>
             </div>
           </div>
           <div className="text-center group">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg group-hover:shadow-xl transition-all duration-300 border border-white/20">
-              <div className="text-3xl font-bold bg-gradient-to-r from-[#19466f] to-[#5bb792] bg-clip-text text-transparent mb-2">20+</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-[#19466f] to-[#5bb792] bg-clip-text text-transparent mb-2">
+                20+
+              </div>
               <div className="text-gray-600">Proyectos Completados</div>
             </div>
           </div>

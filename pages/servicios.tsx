@@ -86,11 +86,11 @@ const Servicios: NextPage = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#19466f]/30 via-transparent to-[#19466f]/40"></div>
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center text-white space-y-4 animate-fade-in-up">
-              <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-white to-[#5bb792]/20 bg-clip-text text-transparent">
+            <div className="text-center text-white space-y-4">
+              <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-white to-[#5bb792]/90 bg-clip-text text-transparent">
                 Nuestros Servicios
               </h1>
-              <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto px-4">
+              <p className="text-lg md:text-xl text-white max-w-2xl mx-auto px-4">
                 Soluciones integrales para el sector inmobiliario
               </p>
             </div>

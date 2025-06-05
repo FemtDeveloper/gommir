@@ -50,11 +50,11 @@ const Nosotros: NextPage = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#19466f]/20 via-transparent to-[#19466f]/30"></div>
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center text-white space-y-4 animate-fade-in-up">
-              <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-white to-[#5bb792]/20 bg-clip-text text-transparent">
+            <div className="text-center text-white space-y-4">
+              <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-white to-[#5bb792]/90 bg-clip-text text-transparent">
                 Nosotros
               </h1>
-              <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto px-4">
+              <p className="text-lg md:text-xl text-white max-w-2xl mx-auto px-4">
                 Conoce nuestra historia, misión y visión
               </p>
             </div>
@@ -85,13 +85,13 @@ const Nosotros: NextPage = () => {
             <div className="flex flex-col lg:flex-row gap-12 items-center">
               <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left w-full lg:w-1/2 space-y-6">
                 <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-[#5bb792]/10 to-[#19466f]/10 rounded-full text-sm font-medium text-[#19466f] mb-4">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></span>
+                  <span className="w-2 h-2 bg-[#5bb792] rounded-full mr-2 animate-pulse"></span>
                   Nuestra Historia
                 </div>
-                <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-900 via-blue-700 to-purple-600 bg-clip-text text-transparent leading-tight">
+                <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#19466f] via-[#5bb792] to-[#19466f] bg-clip-text text-transparent leading-tight">
                   Quienes Somos
                 </h2>
-                <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
+                <div className="w-20 h-1 bg-gradient-to-r from-[#5bb792] to-[#19466f] rounded-full"></div>
                 <p className="text-gray-700 leading-relaxed text-lg max-w-xl">
                   GOMMIR es una empresa con una gran responsabilidad social y
                   ambiental dedicada a la construcción, urbanización, y
@@ -111,7 +111,7 @@ const Nosotros: NextPage = () => {
                     alt="team"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-tr from-[#5bb792]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
               </div>
             </div>
@@ -138,18 +138,18 @@ const Nosotros: NextPage = () => {
                     alt="mission"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-tl from-purple-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-tl from-[#19466f]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
               </div>
               <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left w-full lg:w-1/2 space-y-6">
-                <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full text-sm font-medium text-purple-800 mb-4">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full mr-2 animate-pulse"></span>
+                <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-[#19466f]/10 to-[#5bb792]/10 rounded-full text-sm font-medium text-[#19466f] mb-4">
+                  <span className="w-2 h-2 bg-[#19466f] rounded-full mr-2 animate-pulse"></span>
                   Nuestro Propósito
                 </div>
-                <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-900 via-purple-700 to-pink-600 bg-clip-text text-transparent leading-tight">
+                <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#19466f] via-[#5bb792] to-[#19466f] bg-clip-text text-transparent leading-tight">
                   Nuestra Misión
                 </h2>
-                <div className="w-20 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
+                <div className="w-20 h-1 bg-gradient-to-r from-[#5bb792] to-[#19466f] rounded-full"></div>
                 <p className="text-gray-700 leading-relaxed text-lg max-w-xl">
                   Crear valor para nuestros accionistas y colaboradores,
                   aportando bienestar a la sociedad, con pleno respeto hacia el
