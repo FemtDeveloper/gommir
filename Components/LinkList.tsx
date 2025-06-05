@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { List, ListItem, ListItemButton, ListItemText } from "@mui/material";
 
 interface Props {
   openMenu?: () => void | null;
@@ -7,22 +6,19 @@ interface Props {
 
 const LinkList = ({ openMenu }: Props) => {
   return (
-    <List
-      sx={{
-        display: { xs: "flex" },
-        flexDirection: { xs: "column", sm: "row" },
-      }}
-    >
+    <ul className="flex flex-col md:flex-row list-none m-0 p-0 gap-2 md:gap-0">
       {["Nosotros", "Servicios", "Contactenos"].map((text, index) => (
-        <Link key={text} href={`${text.toLowerCase()}`} onClick={openMenu}>
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        </Link>
+        <li key={text} className="p-0">
+          <Link
+            href={`${text.toLowerCase()}`}
+            onClick={openMenu}
+            className="block px-4 py-2 text-[#001660] font-semibold hover:text-blue-600 hover:bg-gray-50 rounded-md transition-all duration-200 text-base"
+          >
+            {text}
+          </Link>
+        </li>
       ))}
-    </List>
+    </ul>
   );
 };
 

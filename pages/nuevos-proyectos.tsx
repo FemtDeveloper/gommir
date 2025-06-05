@@ -1,6 +1,4 @@
-import React from "react";
 import { NextPage } from "next";
-import { Typography, Box } from "@mui/material";
 import Layout from "../layouts/Layout";
 
 const Nuevosproyectos: NextPage = () => {
@@ -9,12 +7,14 @@ const Nuevosproyectos: NextPage = () => {
       pageDescription="Nuevos proyectos en Cartagena de la empresa Gommir"
       title="Nuevos proyectos"
     >
-      <Box sx={{ marginY: 20, marginX: 5 }} component="section">
-        <Typography variant="h1">Nuevos proyectos </Typography>
-        <Typography variant="h2">
-          Esta es la página dónde se muestran los Nuevos NuevosProyectos
-        </Typography>
-      </Box>
+      <section className="my-20 mx-5">
+        <h1 className="text-4xl font-bold text-[#000f40] mb-8">
+          Nuevos proyectos
+        </h1>
+        <h2 className="text-2xl font-semibold text-[#000f40]">
+          Esta es la página donde se muestran los Nuevos Proyectos
+        </h2>
+      </section>
     </Layout>
   );
 };

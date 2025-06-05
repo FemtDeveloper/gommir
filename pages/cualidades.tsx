@@ -1,43 +1,20 @@
-import React from "react";
 import { NextPage } from "next";
-import { Box, Typography } from "@mui/material";
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
-import Layout from "../layouts/Layout";
 import CharacteriscticsCard from "../Components/Characteristic/CharacteristicsCard";
+import Layout from "../layouts/Layout";
 
 const Cualidades: NextPage = () => {
   return (
     <Layout
       title="Gommir - Cualidades"
-      pageDescription="Cualidades destacadas dde la empresa Gommir"
+      pageDescription="Cualidades destacadas de la empresa Gommir"
     >
-      <Box
-        display={"flex"}
-        flexDirection="column"
-        alignItems={"center"}
-        padding="15px"
-      >
-        <Typography variant="h1" my={5}>
+      <div className="flex flex-col items-center p-4">
+        <h1 className="text-4xl font-bold text-[#000f40] my-8">
           Nuestras cualidades
-        </Typography>
-        <Grid2
-          container
-          xs={12}
-          gap={3}
-          display={"flex"}
-          flexDirection={"column"}
-          justifyContent="center"
-          component={"section"}
-        >
-          <Grid2
-            xs={12}
-            display="flex"
-            flexWrap={"wrap"}
-            justifyContent={"center"}
-            alignItems="center"
-            gap={2}
-            flexDirection={{ xs: "column", sm: "row" }}
-          >
+        </h1>
+
+        <section className="container mx-auto">
+          <div className="flex flex-wrap justify-center items-center gap-6">
             <CharacteriscticsCard
               cardTitle="Compromiso"
               cardMedia="/commitment.jpg"
@@ -68,9 +45,9 @@ const Cualidades: NextPage = () => {
               cardMedia="/satisfaction.jpg"
               cardText="En Gommir, nuestro objetivo final es asegurar que nuestros clientes estén completamente satisfechos con los resultados de sus proyectos. Trabajamos en estrecha colaboración con nuestros clientes para comprender su visión y asegurarnos de que se cumplan o superen sus expectativas."
             />
-          </Grid2>
-        </Grid2>
-      </Box>
+          </div>
+        </section>
+      </div>
     </Layout>
   );
 };

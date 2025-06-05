@@ -1,7 +1,6 @@
-import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
-import CheckIcon from "@mui/icons-material/Check";
+import { Check } from "lucide-react";
+import React, { useRef, useState } from "react";
 
 const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -34,7 +33,7 @@ const ContactForm = () => {
     }, 2000);
   };
   return (
-    <Grid2 display={"flex"} sx={{ justifyContent: "center" }} width={"100%"}>
+    <div className="flex justify-center w-full">
       <div className="contact-container container" id="contact">
         <h1>Contáctanos</h1>
         <form onSubmit={sendEmail} ref={form}>
@@ -71,7 +70,13 @@ const ContactForm = () => {
           />
         </form>
       </div>
-    </Grid2>
+      {messageSended && (
+        <div className="fixed bottom-4 right-4 bg-green-600 text-white p-4 rounded-lg shadow-lg flex items-center gap-2">
+          <Check size={20} />
+          <span>¡Mensaje enviado exitosamente!</span>
+        </div>
+      )}
+    </div>
   );
 };
 

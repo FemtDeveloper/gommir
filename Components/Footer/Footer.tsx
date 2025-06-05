@@ -1,88 +1,52 @@
-import React from "react";
+import { Mail, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Box, Typography } from "@mui/material";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import EmailIcon from "@mui/icons-material/Email";
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
-import PhoneIcon from "@mui/icons-material/Phone";
 
 const Footer = () => {
   return (
-    <Box
-      display={"flex"}
-      flexDirection={{ xs: "column", sm: "row" }}
-      justifyContent="center"
-      alignItems={"center"}
-      pb={5}
-      component={"footer"}
-      sx={{ backgroundColor: "#f1f1f1" }}
-    >
-      <Grid2 xs={6}>
-        <div
-          className="main-logo"
-          style={{ width: "320px", position: "relative", marginTop: "10px" }}
-        >
-          <Link href={"/"}>
-            <Image
-              src="/footer-logo.png"
-              alt="footer-logo"
-              fill
-              sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
-            />
-          </Link>
+    <footer className="bg-gray-100 pb-5">
+      <div className="flex flex-col sm:flex-row justify-center items-center">
+        <div className="sm:w-1/2 flex justify-center">
+          <div className="w-80 relative mt-2.5">
+            <Link href={"/"}>
+              <Image
+                src="/footer-logo.png"
+                alt="footer-logo"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw,
+                33vw"
+              />
+            </Link>
+          </div>
         </div>
-      </Grid2>
 
-      <Grid2 container gap={2} mt={2} justifyContent="center">
-        <Grid2 xs={12} sm={6} justifyContent="center" display={"flex"}>
-          <Typography variant="h3" component={"h3"}>
-            Datos de contacto
-          </Typography>
-        </Grid2>
-        <Grid2 xs={12} sm={6}>
-          <Box
-            display="flex"
-            flexDirection={"row"}
-            justifyContent="center"
-            alignItems={"center"}
-            gap={3}
-          >
-            <LocationOnIcon color="secondary" />
-            <Box>
-              <Typography variant="subtitle2">Bogotá D.C, Colombia</Typography>
-              {/* <Typography variant="subtitle2">Calle 94 # 13 - 00</Typography> */}
-            </Box>
-          </Box>
-        </Grid2>
-        <Grid2 xs={12} sm={6}>
-          <Box
-            display="flex"
-            flexDirection={"row"}
-            justifyContent="center"
-            alignItems={"center"}
-            gap={3}
-          >
-            <EmailIcon color="secondary" />
-            <Typography variant="subtitle2">contacto@gommirltda.com</Typography>
-          </Box>
-        </Grid2>
-        <Grid2 xs={12} sm={6}>
-          {/* <Box
-            display="flex"
-            flexDirection={"row"}
-            justifyContent="center"
-            alignItems={"center"}
-            gap={3}
-          >
-            <PhoneIcon color="secondary" />
-            <Typography variant="subtitle2">(+57) 318-XXX-XXXX</Typography>
-          </Box> */}
-        </Grid2>
-      </Grid2>
-    </Box>
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 justify-center">
+          <div className="sm:col-span-2 flex justify-center">
+            <h3 className="text-xl font-bold text-[#000f40]">
+              Datos de contacto
+            </h3>
+          </div>
+
+          <div className="flex flex-row justify-center items-center gap-3">
+            <MapPin className="text-[#000823]" size={24} />
+            <div>
+              <p className="text-sm text-[#000f40] font-medium">
+                Bogotá D.C, Colombia
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-row justify-center items-center gap-3">
+            <Mail className="text-[#000823]" size={24} />
+            <p className="text-sm text-[#000f40] font-medium">
+              contacto@gommirltda.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
 

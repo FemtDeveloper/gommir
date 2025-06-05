@@ -1,12 +1,10 @@
-import { Typography, Box } from "@mui/material";
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import Image from "next/image";
-import Slider from "../Components/Slide";
-import Layout from "../layouts";
+import CharacteriscticsCard from "../Components/Characteristic/CharacteristicsCard";
 import ContactForm from "../Components/contact/ContactForm";
 import MyMap from "../Components/Maps/Maps";
-import CharacteriscticsCard from "../Components/Characteristic/CharacteristicsCard";
 import NuevosProyectos from "../Components/NuevosProyectos";
+import Slider from "../Components/Slide";
+import Layout from "../layouts";
 
 export default function Home() {
   const styles = {
@@ -18,89 +16,59 @@ export default function Home() {
       pageDescription="Página de inicio de la empresa Gommir Ltda"
     >
       <Slider />
-      <Grid2
-        container
-        xs={12}
-        gap={3}
-        display={"flex"}
-        flexDirection={{
-          xs: "column",
-          sm: "row",
-        }}
-        justifyContent="center"
-        alignItems="center"
-        marginY={{ xs: 1, sm: 10 }}
-      >
-        <Grid2
-          xs={12}
-          sm={8}
-          mb={2}
-          padding={{ xs: 2, sm: 0 }}
-          display="flex"
-          width={"100%"}
-          gap={2}
-          flexDirection="column"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <Typography variant="h1" component={"h1"}>
-            Gommir{" "}
-          </Typography>
-          <Typography variant="body1" textAlign={"center"}>
-            Con años de experiencia y un equipo de profesionales dedicados,
-            tenemos las habilidades y los recursos para convertir su visión
-            inmobiliaria en una realidad. Desde construcciones nuevas hasta
-            renovaciones y desarrollos comerciales, tenemos la experiencia para
-            brindar resultados de alta calidad a tiempo y dentro del
-            presupuesto. Si usted es un constructor de viviendas, dueño de una
-            propiedad o desarrollador, podemos ayudarlo a hacer realidad su
-            proyecto.
-          </Typography>
-        </Grid2>
-        <Grid2 className="gommir-image" xs={12} sm={6}>
-          <Image src={"/team.jpg"} fill alt="team" />
-        </Grid2>
-      </Grid2>
+      <div className="container mx-auto px-4 py-12">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 my-8">
+          <div className="flex flex-col items-center justify-center gap-6 w-full lg:w-2/3 text-center px-4">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#000f40] mb-4">
+              Gommir
+            </h1>
+            <p className="text-lg leading-relaxed text-gray-700 max-w-4xl">
+              Con años de experiencia y un equipo de profesionales dedicados,
+              tenemos las habilidades y los recursos para convertir su visión
+              inmobiliaria en una realidad. Desde construcciones nuevas hasta
+              renovaciones y desarrollos comerciales, tenemos la experiencia
+              para brindar resultados de alta calidad a tiempo y dentro del
+              presupuesto. Si usted es un constructor de viviendas, dueño de una
+              propiedad o desarrollador, podemos ayudarlo a hacer realidad su
+              proyecto.
+            </p>
+          </div>
+          <div className="relative w-full lg:w-1/2 h-80 lg:h-96 gommir-image">
+            <Image
+              src={"/team.jpg"}
+              fill
+              alt="team"
+              className="object-cover rounded-xl shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
 
       <NuevosProyectos />
-      <Box sx={{ display: { sm: "none", padding: "30px 15px" } }}>
-        <Typography variant="h2" mb={2}>
+
+      {/* Mobile version */}
+      <div className="lg:hidden p-6 bg-gray-50">
+        <h2 className="text-3xl font-bold text-[#000f40] mb-6 text-center">
           Nuestras cualidades
-        </Typography>
-        <CharacteriscticsCard
-          cardTitle="Nuestras cualidades"
-          cardText="Conoce nuestras cualidades"
-          cardMedia="/characteristics.jpg"
-          cardStyles={styles}
-          cardLink={"cualidades"}
-        />
-      </Box>
-      <Box
-        display={{ xs: "none", sm: "flex" }}
-        flexDirection="column"
-        alignItems={"center"}
-      >
-        <Typography variant="h1" my={5}>
+        </h2>
+        <div className="flex justify-center">
+          <CharacteriscticsCard
+            cardTitle="Nuestras cualidades"
+            cardText="Conoce nuestras cualidades"
+            cardMedia="/characteristics.jpg"
+            cardStyles={styles}
+            cardLink={"cualidades"}
+          />
+        </div>
+      </div>
+
+      {/* Desktop version */}
+      <div className="hidden lg:flex flex-col items-center py-16 bg-gray-50">
+        <h1 className="text-4xl lg:text-5xl font-bold text-[#000f40] mb-12 text-center">
           Nuestras cualidades
-        </Typography>
-        <Grid2
-          container
-          xs={12}
-          gap={3}
-          display={"flex"}
-          flexDirection={"column"}
-          justifyContent="center"
-          component={"section"}
-        >
-          <Grid2
-            xs={12}
-            display="flex"
-            flexWrap={"wrap"}
-            justifyContent={"center"}
-            alignItems="center"
-            gap={2}
-            flexDirection={{ xs: "column", sm: "row" }}
-          >
+        </h1>
+        <section className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center max-w-7xl mx-auto">
             <CharacteriscticsCard
               cardTitle="Compromiso"
               cardMedia="/commitment.jpg"
@@ -131,9 +99,9 @@ export default function Home() {
               cardMedia="/satisfaction.jpg"
               cardText="En Gommir, nuestro objetivo final es asegurar que nuestros clientes estén completamente satisfechos con los resultados de sus proyectos. Trabajamos en estrecha colaboración con nuestros clientes para comprender su visión y asegurarnos de que se cumplan o superen sus expectativas."
             />
-          </Grid2>
-        </Grid2>
-      </Box>
+          </div>
+        </section>
+      </div>
 
       <MyMap />
       <ContactForm />
